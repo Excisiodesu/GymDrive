@@ -1,17 +1,11 @@
 package com.mtqn.gymdrive;
 
-import android.content.Intent;
-import android.support.annotation.NonNull;
-import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.view.ViewGroup;
-import android.widget.Button;
 import android.widget.Toast;
+
 import java.sql.SQLException;
 import java.util.ArrayList;
 
@@ -43,22 +37,6 @@ public class HomePage extends AppCompatActivity {
 
         onServerStart();
 
-    }
-
-    @Nullable
-    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
-        // Toast.makeText(getActivity(),"Hello", Toast.LENGTH_LONG).show();
-        View view  = inflater.inflate(R.layout.activity_home_page,container,false);
-        Button button_S = (Button) view.findViewById(R.id.button_S);
-        button_S.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent in = new Intent(HomePage.this, SubActivity.class);
-                in.putExtra("some","somme data");
-                startActivity(in);
-            }
-        });
-        return view;
     }
 
 

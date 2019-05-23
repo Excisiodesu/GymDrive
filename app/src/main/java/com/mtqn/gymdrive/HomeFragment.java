@@ -12,11 +12,10 @@ import android.widget.Button;
 
 public class HomeFragment extends Fragment {
 
-    public HomeFragment(){
+    public  HomeFragment(){
+
 
     }
-
-    @Nullable
     @Override
     public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
         // Toast.makeText(getActivity(),"Hello", Toast.LENGTH_LONG).show();
