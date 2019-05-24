@@ -24,7 +24,7 @@ public class HomeFragment extends Fragment {
         button_S.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent in = new Intent(getActivity(), SubActivity.class);
+                Intent in = new Intent(getActivity(), HomePage.class);
                 in.putExtra("some","somme data");
                 startActivity(in);
             }

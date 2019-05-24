@@ -1,7 +1,7 @@
 package com.mtqn.gymdrive;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
 import android.widget.Toast;
@@ -56,4 +56,24 @@ public class HomePage extends AppCompatActivity {
         return sqlConnection;
     }
 
+
+   /* @Override
+    public View onCreateView(@NonNull LayoutInflater inflater, @Nullable ViewGroup container, @Nullable Bundle savedInstanceState) {
+        // Toast.makeText(getActivity(),"Hello", Toast.LENGTH_LONG).show();
+        View view  = inflater.inflate(R.layout.activity_home_page,container,false);
+        Button button_S = (Button) view.findViewById(R.id.button_S);
+        button_S.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent in = new Intent(getActivity(), SubActivity.class);
+                in.putExtra("some","somme data");
+                startActivity(in);
+            }
+        });
+        return view;
+    }*/
+   
+
 }
+
+
